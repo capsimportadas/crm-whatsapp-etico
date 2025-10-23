@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: crm-whatsapp-etico
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        fromDatabase:
+          name: credenciales-supabase
+          property: url
+      - key: SUPABASE_KEY
+        fromDatabase:
+          name: credenciales-supabase
+          property: key
