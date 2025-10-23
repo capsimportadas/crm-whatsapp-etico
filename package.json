@@ -1,0 +1,17 @@
+{
+  "name": "crm-whatsapp-etico",
+  "version": "1.0.0",
+  "description": "CRM ético para WhatsApp gratis",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@supabase/supabase-js": "^2.38.0",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
